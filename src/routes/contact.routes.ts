@@ -6,5 +6,6 @@ const contactController = new ContactControllers();
 
 routes.post("/:id", contactController.create);
 routes.get("", contactController.list);
+routes.get("/:id", contactController.listById);
 
 export default routes;
