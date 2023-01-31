@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import createClientService from "../../services/Client/createClient.service";
+import listClientById from "../../services/Client/listClientById.service";
 import listClientService from "../../services/Client/listClients.service";
 import updateClientService from "../../services/Client/updateClient.service";
 
@@ -21,6 +22,14 @@ export class ClientControllers {
     const clients = await listClientService();
 
     return res.json(clients);
+  }
+
+  async listById(req: Request, res: Response) {
+    const { id } = req.params;
+
+    const client = await listClientById(id);
+
+    return res.json(client);
   }
 
   async update(req: Request, res: Response) {
