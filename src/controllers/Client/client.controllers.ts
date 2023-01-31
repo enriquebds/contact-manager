@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import createClientService from "../../services/Client/createClient.service";
+import deleteClient from "../../services/Client/deleteClient.service";
 import listClientById from "../../services/Client/listClientById.service";
 import listClientService from "../../services/Client/listClients.service";
 import updateClientService from "../../services/Client/updateClient.service";
@@ -45,5 +46,15 @@ export class ClientControllers {
     });
 
     return res.status(202).json(updatedClient);
+  }
+
+  async delete(req: Request, res: Response) {
+    const { id } = req.params;
+
+    await deleteClient(id);
+
+    return res.json({
+      message: "Client deleted",
+    });
   }
 }
