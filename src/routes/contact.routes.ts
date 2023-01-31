@@ -7,5 +7,6 @@ const contactController = new ContactControllers();
 routes.post("/:id", contactController.create);
 routes.get("", contactController.list);
 routes.get("/:id", contactController.listById);
+routes.delete("/:id", contactController.delete);
 
 export default routes;
