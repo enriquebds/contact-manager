@@ -1,5 +1,6 @@
 import express from "express";
 import { handleErrors } from "./errors/handleError";
+import "express-async-errors";
 import clientRoutes from "./routes/client.routes";
 
 let cors = require("cors");

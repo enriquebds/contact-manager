@@ -6,5 +6,8 @@ const clientController = new ClientControllers();
 
 routes.post("", clientController.create);
 routes.get("", clientController.list);
+routes.get("/:id", clientController.listById);
+routes.patch("/:id", clientController.update);
+routes.delete("/:id", clientController.delete);
 
 export default routes;
