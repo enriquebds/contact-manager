@@ -8,5 +8,6 @@ routes.post("/:id", contactController.create);
 routes.get("", contactController.list);
 routes.get("/:id", contactController.listById);
 routes.delete("/:id", contactController.delete);
+routes.patch("/:id", contactController.update);
 
 export default routes;
