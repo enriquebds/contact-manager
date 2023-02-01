@@ -51,3 +51,11 @@ Execute as migrations com o comando:
 ```
 npx prisma migrate dev
 ```
+
+### 2.4. Visualização das tabelas
+
+Execute o seguinte código para ter acesso as tabelas:
+
+```
+npx prisma studio
+```
