@@ -4,7 +4,7 @@
 
 - [Visão Geral](#1-visão-geral)
 
----
+Aplicação back-end onde o usuário pode se cadastrar e criar novos contatos ao seu perfil.
 
 ## 1. Visão Geral
 
