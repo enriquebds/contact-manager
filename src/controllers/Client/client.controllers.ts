@@ -3,6 +3,7 @@ import createClientService from "../../services/Client/createClient.service";
 import deleteClient from "../../services/Client/deleteClient.service";
 import listClientById from "../../services/Client/listClientById.service";
 import listClientService from "../../services/Client/listClients.service";
+import loginService from "../../services/Client/loginClient.service";
 import updateClientService from "../../services/Client/updateClient.service";
 
 export class ClientControllers {
@@ -56,5 +57,13 @@ export class ClientControllers {
     return res.json({
       message: "Client deleted",
     });
+  }
+
+  async login(req: Request, res: Response) {
+    const { email, password } = req.body;
+
+    const token = await loginService({ email, password });
+
+    return res.status(200).json(token);
   }
 }

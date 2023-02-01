@@ -12,3 +12,8 @@ export interface IUpdateClientRequest {
   password: string;
   telephone: string;
 }
+
+export interface ILoginRequest {
+  email: string
+  password: string
+}
