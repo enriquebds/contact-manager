@@ -7,6 +7,7 @@
   - [Instalando Dependências](#21-instalando-dependências)
   - [Variáveis de Ambiente](#22-variáveis-de-ambiente)
   - [Migrations](#23-migrations)
+- [Autenticação](#3-autenticação)
 
 ---
 
@@ -64,6 +65,8 @@ npx prisma studio
 ```
 
 ---
+
+## 3. Autenticação
 
 [ Voltar para o topo ](#tabela-de-conteúdos)
 
