@@ -82,5 +82,6 @@ As rotas que necessitam de um Bearer Token seja passado são as seguintes:
 | ------  | -------------- | ---------------------------------------------- |
 | PATCH   | [/client/:id]  | Atualização de um cliente.                     |
 | DELETE  | [/client/:id]  | Deleção de um cliente.                         |
+| POST    | [/contact/:id] | Criação de um contato.                         |
 | PATCH   | [/contact/:id] | Atualização de um contato.                     |
 | DELETE  | [/contact/:id] | Deleção de um contato.                         |
