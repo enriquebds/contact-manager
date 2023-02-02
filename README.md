@@ -96,4 +96,16 @@ As rotas que necessitam de um Bearer Token seja passado são as seguintes:
 ### Índice
 
 - Login
- - POST - /login
+  - POST - /login
+- Client
+  - POST   - /client
+  - GET    - /client
+  - GET    - /client/:id
+  - PATCH  - /client/:id
+  - DELETE - /client/:id
+- Contatos
+  - POST   - /contact/:id
+  - GET    - /contact
+  - GET    - /contact/:id
+  - PATCH  - /contact/:id
+  - DELETE - /contact/:id
