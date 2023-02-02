@@ -1,0 +1,40 @@
+{
+  "name": "contact-manager-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enriquebds/contact-manager-back-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enriquebds/contact-manager-back-end/issues"
+  },
+  "homepage": "https://github.com/enriquebds/contact-manager-back-end#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.16",
+    "@types/node": "^18.11.18",
+    "prisma": "^4.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.9.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "sqlite3": "^5.1.4",
+    "ts-node-dev": "^2.0.0"
+  }
+}
