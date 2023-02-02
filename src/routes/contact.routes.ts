@@ -5,7 +5,7 @@ import tokenAuthMiddleware from "../middlewares/tokenAuth.middleware";
 const routes = Router();
 const contactController = new ContactControllers();
 
-routes.post("/:id", contactController.create);
+routes.post("/:id", tokenAuthMiddleware, contactController.create);
 routes.get("", contactController.list);
 routes.get("/:id", contactController.listById);
 routes.delete("/:id", tokenAuthMiddleware, contactController.delete);
