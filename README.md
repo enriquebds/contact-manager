@@ -96,4 +96,4 @@ As rotas que necessitam de um Bearer Token seja passado são as seguintes:
 ### Índice
 
 - Login
-  - POST - /login
+ - POST - /login
