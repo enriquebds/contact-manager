@@ -8,6 +8,7 @@
   - [Variáveis de Ambiente](#22-variáveis-de-ambiente)
   - [Migrations](#23-migrations)
 - [Autenticação](#3-autenticação)
+- [Endpoints](#4-endpoints)
 
 ---
 
@@ -85,3 +86,14 @@ As rotas que necessitam de um Bearer Token seja passado são as seguintes:
 | POST    | [/contact/:id] | Criação de um contato.                         |
 | PATCH   | [/contact/:id] | Atualização de um contato.                     |
 | DELETE  | [/contact/:id] | Deleção de um contato.                         |
+
+---
+
+## 4. Endpoints
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+### Índice
+
+- Login
+  - POST - /login
