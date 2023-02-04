@@ -7,7 +7,7 @@ const contactController = new ContactControllers();
 
 routes.post("/:id", tokenAuthMiddleware, contactController.create);
 routes.get("", contactController.list);
-routes.get("/:id", contactController.listById);
+routes.get("/:id", contactController.listByClientId);
 routes.delete("/:id", tokenAuthMiddleware, contactController.delete);
 routes.patch("/:id", tokenAuthMiddleware, contactController.update);
 
