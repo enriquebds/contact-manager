@@ -1,14 +1,14 @@
-import { Contacts } from "@prisma/client";
+import { Client, Contacts } from "@prisma/client";
 import { prisma } from "../../../prisma/client/client";
 import { AppError } from "../../errors/AppError";
 
-const listContactById = async (id: string): Promise<Contacts> => {
-  const contact = await prisma.contacts.findFirst({
+const listContactsByClientId = async (id: string) => {
+  const contact = await prisma.client.findFirst({
     where: {
       id,
     },
-    include: {
-      client: true,
+    select: {
+      contacts: true,
     },
   });
 
@@ -19,4 +19,4 @@ const listContactById = async (id: string): Promise<Contacts> => {
   return contact;
 };
 
-export default listContactById;
+export default listContactsByClientId;
