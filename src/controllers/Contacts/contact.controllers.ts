@@ -26,7 +26,7 @@ export class ContactControllers {
     res.json(contacts);
   }
 
-  async listById(req: Request, res: Response) {
+  async listByClientId(req: Request, res: Response) {
     const { id } = req.params;
 
     const contact = await listContactById(id);
