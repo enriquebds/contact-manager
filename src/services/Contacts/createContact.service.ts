@@ -22,6 +22,7 @@ const createContactService = async ({
   const contactAlreadyExists = await prisma.contacts.findFirst({
     where: {
       telephone,
+      id,
     },
   });
 
